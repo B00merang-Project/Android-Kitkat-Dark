@@ -1,5 +1,8 @@
-# Android-4.4-Kitkat-Dark
-Dark variant of Android 4.4 Kitkat
+[![built-with-azurra-framework](https://github.com/Elbullazul/Azurra_framework/raw/assets/azurra_framework_smaller.png)](https://github.com/Elbullazul/Azurra_framework)
+
+# Android 4.4 Kitkat-Dark
+
+Dark variant of Android 4.4 Kitkat, based on the Holographic theme
 
 ![android-kitkat-dark](https://github.com/B00merang-Project/gallery/raw/master/Android%204.4%20Kitkat%20Dark%20(3).png)
 
