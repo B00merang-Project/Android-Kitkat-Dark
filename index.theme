@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Android 4.4 Kitkat Dark
+Comment=GTK theme based on Holographic theme in Android 4.4
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Android 4.4 Kitkat Dark
+MetacityTheme=Chrome OS
+IconTheme=Papirus
+CursorTheme=DMZ-White
+ButtonLayout=:minimize,maximize,close
