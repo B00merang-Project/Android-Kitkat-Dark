@@ -17,7 +17,7 @@ dnd {
 image:disabled {
   -gtk-icon-filter: opacity(0.5); }
 
-image, image:disabled, label, label:disabled, box, box:disabled {
+image, label, box {
   background-color: transparent; }
 
 .view {
@@ -740,14 +740,19 @@ headerbar {
     headerbar button:backdrop {
       color: #FFFFFF;
       background-color: transparent; }
-  headerbar entry {
-    padding: 4px 8px; }
   headerbar.titlebar, .titlebar headerbar {
     border-radius: 0px 0px 0px 0px; }
-  headerbar .titlebutton.close, headerbar .titlebutton.maximize, headerbar .titlebutton.minimize, headerbar .titlebutton:not(separator) {
+
+windowcontrols {
+  border-spacing: 6px; }
+  windowcontrols.start:not(.empty):dir(ltr), windowcontrols.end:not(.empty):dir(rtl) {
+    margin-right: 7px; }
+  windowcontrols.start:not(.empty):dir(rtl), windowcontrols.end:not(.empty):dir(ltr) {
+    margin-left: 7px; }
+  windowcontrols button.close, windowcontrols button.maximize, windowcontrols button.minimize {
     padding: 2px 2px;
     background-color: transparent; }
-    headerbar .titlebutton.close:active, headerbar .titlebutton.maximize:active, headerbar .titlebutton.minimize:active, headerbar .titlebutton:not(separator):active {
+    windowcontrols button.close:active, windowcontrols button.maximize:active, windowcontrols button.minimize:active {
       color: #d9d9d9; }
 
 pathbar > button.text-button, pathbar > button.image-button, pathbar > button {
@@ -1460,7 +1465,7 @@ actionbar {
     padding: 0 12px; }
 
 scrolledwindow > overshoot.top {
-  background-image: radial-gradient(farthest-side at top, black, transparent);
+  background-image: radial-gradient(farthest-side at top, rgba(0, 0, 0, 0.5), transparent);
   background-size: 100% 50%;
   background-repeat: no-repeat;
   background-position: top;
@@ -1469,7 +1474,7 @@ scrolledwindow > overshoot.top {
   box-shadow: none; }
 
 scrolledwindow > overshoot.bottom {
-  background-image: radial-gradient(farthest-side at bottom, black, transparent);
+  background-image: radial-gradient(farthest-side at bottom, rgba(0, 0, 0, 0.5), transparent);
   background-size: 100% 50%;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -1478,7 +1483,7 @@ scrolledwindow > overshoot.bottom {
   box-shadow: none; }
 
 scrolledwindow > overshoot.left {
-  background-image: radial-gradient(farthest-side at left, black, transparent);
+  background-image: radial-gradient(farthest-side at left, rgba(0, 0, 0, 0.5), transparent);
   background-size: 50% 100%;
   background-repeat: no-repeat;
   background-position: left;
@@ -1487,7 +1492,7 @@ scrolledwindow > overshoot.left {
   box-shadow: none; }
 
 scrolledwindow > overshoot.right {
-  background-image: radial-gradient(farthest-side at right, black, transparent);
+  background-image: radial-gradient(farthest-side at right, rgba(0, 0, 0, 0.5), transparent);
   background-size: 50% 100%;
   background-repeat: no-repeat;
   background-position: right;
@@ -2132,10 +2137,7 @@ popover.entry-completion > contents {
   padding: 0; }
 
 statusbar {
-  padding: 4px;
-  color: #FFFFFF; }
-  statusbar frame > border {
-    border: none; }
+  padding: 4px; }
 
 menubutton > button > box {
   border-spacing: 6px; }
@@ -2184,12 +2186,6 @@ menubutton arrow {
 .terminal-screen, terminal-window, vte-terminal {
   background-color: #000000;
   color: #FFFFFF; }
-
-terminal-screen-container, terminal-screen-container:backdrop,
-terminal-screen-container scrollbar:not(slider),
-terminal-screen-container scrollbar:not(slider):backdrop {
-  border-color: transparent;
-  background-color: transparent; }
 
 stackswitcher button.text-button {
   min-width: 80px; }
