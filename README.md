@@ -1,28 +1,14 @@
 [![built-with-azurra-framework](https://github.com/Elbullazul/Azurra_framework/raw/assets/azurra_framework_smaller.png)](https://github.com/Elbullazul/Azurra_framework)
 
-# Android 4.4 Kitkat-Dark
+# Android Kitkat Dark
+Dark variant of Android Kitkat, based on the Holographic theme
 
-Dark variant of Android 4.4 Kitkat, based on the Holographic theme
-
+### Preview
 ![android-kitkat-dark](https://github.com/B00merang-Project/gallery/raw/master/Android%204.4%20Kitkat%20Dark%20(3).png)
 
-**Maintainer:** [Elbullazul](https://github.com/elbullazul)
-
-**Distributor:** [B00merang Project](https://github.com/B00merang-Project)
-
-**License:** GPL v3
-
-**More info :** http://b00merang.weebly.com/android-kitkat.html
+### Supported platforms
+- Any GTK-based desktop
+- See [light-version](https://github.com/B00merang-Project/Android-Kitkat) for shell themes
 
 ### Manual installation
-
-Extract the zip file to the themes directory i.e. `/home/USERNAME/.themes`
-
-### Requirements
-
-- GTK+ 3.20 or above
-- Murrine and Pixmap theme engines
-
-### Contribute
-
-Contact us @ http://b00merang.weebly.com/contact.html
+Go to releases, download the latest `.zip` file and extract it to the themes directory i.e. `/home/USERNAME/.themes`
