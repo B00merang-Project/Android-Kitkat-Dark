@@ -791,10 +791,7 @@ headerbar {
     border-radius: 0px;
     color: #FFFFFF;
     border-color: #324D60;
-    background-color: #324D60;
-    outline-style: solid;
-    outline-width: 2px;
-    outline-offset: 0; }
+    background-color: #324D60; }
     headerbar button:active, headerbar button:checked {
       outline-color: #70d0f3;
       color: #FFFFFF; }
@@ -1216,40 +1213,42 @@ treeview ~ scrollbar.vertical {
   margin-top: -1px; }
 
 switch {
-  outline-offset: -4px;
   margin: 5px;
-  border: 1px solid #363739;
   border-radius: 0;
-  background-color: #363739; }
+  color: #FFFFFF;
+  border: 1px solid #363739;
+  background-color: #3C3D3F; }
   switch:disabled {
     color: #949494;
-    border-color: #1e1e1e;
+    border-color: #202020;
     background-color: #242424; }
     switch:disabled:backdrop {
       color: #5e5e5e;
-      border-color: #1e1e1e;
+      border-color: #202020;
       background-color: #242424; }
   switch:backdrop {
     color: #FFFFFF;
     border-color: #2D2E2F;
     background-color: #2D2E2F; }
-  switch slider {
+  switch > slider {
     min-width: 30px;
     min-height: 20px;
-    margin: 0;
+    margin: 0px;
+    border-radius: 0px;
     border: none;
-    border-radius: 0;
     color: #FFFFFF;
-    background-color: #7e7e7e; }
-  switch:checked slider {
+    background-color: #7e7e7e;
+    background-image: none;
+    box-shadow: none; }
+  switch:checked > slider {
     background-color: #32A3CC; }
-  switch:checked:backdrop slider {
+  switch:checked:backdrop > slider {
     background-color: #32A3CC; }
-  switch:disabled slider {
+  switch:disabled > slider {
     background-color: #1e1e1e; }
-  switch:disabled:backdrop slider {
+  switch:disabled:backdrop > slider {
     background-color: #1e1e1e; }
-  switch:backdrop slider {
+  switch:backdrop > slider {
     background-color: #101010; }
 
 checkbutton.text-button, radiobutton.text-button {
